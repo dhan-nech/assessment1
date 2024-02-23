@@ -14,11 +14,14 @@ public class Main {
             arrayName.add(entry);
         }
 
-        for(int i : arrayName){
+        /*for(int i : arrayName){
             if(i%2 == 0){
                 sum += i;
             }
         }
-        System.out.println("Total Even numbers is = " + sum);
+        System.out.println("Total Even numbers is = " + sum);*/
+
+        EvenAdder evenAdder = new EvenAdder(arrayName);
+        System.out.println("Sum = " + evenAdder.getEvenSum());
     }
 }
